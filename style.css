@@ -25,10 +25,10 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--white);
+    background: #1a2639;  /* Azul escuro */
+    min-height: 100vh;
+    color: white;
+    padding: 20px;
 }
 
 h1, h2, h3, h4 {
