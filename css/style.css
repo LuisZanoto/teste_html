@@ -61,10 +61,26 @@ a {
     color: var(--accent);
 }
 
-.header-note,
 .site-footer {
     color: var(--muted);
     font-size: 13px;
+}
+
+.visitor-counter {
+    min-width: 140px;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.visitor-counter img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: 24px;
 }
 
 main {
@@ -219,6 +235,14 @@ h1 span {
 
     .site-header {
         min-height: 72px;
+    }
+
+    .visitor-counter {
+        min-width: 0;
+    }
+
+    .visitor-counter img {
+        height: 22px;
     }
 
     .intro {

@@ -6,12 +6,14 @@
     <meta name="description" content="Uma página simples feita com HTML e CSS, pronta para publicar no GitHub Pages.">
     <meta name="theme-color" content="#f6f7f3">
     <title>Uma página simples | GitHub Pages</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="site-header">
         <a class="wordmark" href="#inicio" aria-label="Página inicial">página<span>.</span></a>
-        <span class="header-note">Um projeto simples</span>
+        <div class="visitor-counter" data-visitor-counter aria-label="Contador global de visitas" aria-live="polite">
+            <span>Carregando visitas</span>
+        </div>
     </header>
 
     <main id="inicio">
@@ -36,5 +38,6 @@
         <span>Feito para a web, sem excessos.</span>
         <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">Sobre o GitHub Pages <span aria-hidden="true">↗</span></a>
     </footer>
+    <script src="js/visits.js" defer></script>
 </body>
 </html>
