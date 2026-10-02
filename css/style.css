@@ -277,7 +277,8 @@ h2 {
     margin: 29px 0 27px;
 }
 
-.process-figure img {
+.process-figure img,
+.process-figure video {
     width: 70%;
     max-height: 462px;
     margin: 0 auto;
@@ -648,7 +649,8 @@ tbody tr:nth-child(even) {
         font-size: 14px;
     }
 
-    .process-figure img {
+    .process-figure img,
+    .process-figure video {
         max-height: 364px;
     }
 
