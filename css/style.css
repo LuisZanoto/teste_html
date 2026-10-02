@@ -289,6 +289,10 @@ h2 {
     border: 1px solid var(--line);
 }
 
+.process-figure video {
+    width: 42%;
+}
+
 .process-figure figcaption {
     padding: 10px 0 0;
     color: var(--muted);
