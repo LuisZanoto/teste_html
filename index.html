@@ -16,6 +16,21 @@
             <a href="#dimensionamento">Cálculos</a>
             <a href="#ensaio">Ensaio</a>
         </nav>
+        <div class="language-switcher" role="group" aria-label="Selecionar idioma">
+            <button class="language-button" type="button" data-language="pt-BR" aria-label="Português (Brasil)" aria-pressed="true">
+                <svg viewBox="0 0 36 24" aria-hidden="true" focusable="false">
+                    <rect width="36" height="24" fill="#009b3a"/>
+                    <path d="M18 3 32 12 18 21 4 12z" fill="#ffdf00"/>
+                    <circle cx="18" cy="12" r="5.3" fill="#002776"/>
+                </svg>
+            </button>
+            <button class="language-button" type="button" data-language="en" aria-label="English (England)" aria-pressed="false">
+                <svg viewBox="0 0 36 24" aria-hidden="true" focusable="false">
+                    <rect width="36" height="24" fill="#fff"/>
+                    <path d="M14 0h8v24h-8zM0 8h36v8H0z" fill="#cf142b"/>
+                </svg>
+            </button>
+        </div>
         <div class="visitor-counter" data-visitor-counter aria-label="Contador global de visitas" aria-live="polite">
             <span>Carregando visitas</span>
         </div>
@@ -25,11 +40,11 @@
         <article class="article">
             <header class="article-heading">
                 <p class="eyebrow"><span aria-hidden="true"></span> Projeto de oficina · Aeromodelismo</p>
-                <h1>Uma mufla artesanal para o motor <span>26 cc</span></h1>
+                <h1>Uma mufla artesanal para o motor <span>26 cc</span><span class="english-engine-suffix" aria-hidden="true"> engine</span></h1>
                 <p class="article-deck">Do escape original a um silenciador construído com um paliteiro inox, um tubo perfurado e defletores de ralo de pia. Um relato de construção, dimensionamento e ensaio inicial.</p>
                 <div class="article-byline">
                     <span>Motor 2 tempos de roçadeira adaptado</span>
-                    <span>Leitura técnica · 7 etapas</span>
+                    <span>Leitura técnica · 8 etapas</span>
                 </div>
             </header>
 
@@ -47,6 +62,7 @@
                 <a href="#defletores">Defletores</a>
                 <a href="#dimensionamento">Dimensionamento</a>
                 <a href="#ensaio">Ensaio e observações</a>
+                <a href="#atualizacao">Atualização do amaciamento</a>
             </nav>
 
             <div class="article-body">
@@ -160,12 +176,36 @@
                     <p>As anotações também registram cerca de duas horas de funcionamento acumulado, alternância entre proporções de óleo de 25:1, 32:1 e 28:1, e aquecimento percebido após ciclos curtos. A coloração da vela e a sensação ao toque são observações qualitativas: não confirmam, sozinhas, temperatura segura ou carburação ideal.</p>
                     <aside class="safety-note">
                         <strong>Leitura responsável do ensaio</strong>
-                        <p>Não há medição de temperatura ainda, ruído em dB(A), contrapressão ou teste controlado isolando cada alteração. Para avaliar desempenho e segurança, falta registrar as condições do ensaio e usar instrumentos adequados para isso.</p>
+                        <p>Naquele ensaio inicial, ainda não havia medição de temperatura; também não foram medidos ruído em dB(A) ou contrapressão, nem houve teste controlado que isolasse cada alteração. Para avaliar desempenho e segurança, é importante registrar as condições do ensaio e usar instrumentos adequados.</p>
+                    </aside>
+                </section>
+
+                <section class="article-section" id="atualizacao">
+                    <p class="section-index">07 <span>·</span> Atualização do ensaio</p>
+                    <h2>Temperatura e resposta após três horas</h2>
+                    <p>Com aproximadamente três horas de amaciamento, foi feita uma avaliação com termômetro digital a laser. As leituras abaixo são temperaturas de superfície nos pontos indicados, não medições internas do motor.</p>
+                    <div class="table-wrap">
+                        <table>
+                            <caption>Temperaturas de superfície registradas no ensaio</caption>
+                            <thead><tr><th scope="col">Condição</th><th scope="col">Ponto observado</th><th scope="col">Leitura</th></tr></thead>
+                            <tbody>
+                                <tr><th scope="row">Média rotação, 4.500 RPM</th><td>Ponto de maior temperatura, sob a parte traseira do bloco, cerca de 1 cm abaixo da vela, sem incidência direta de ar</td><td>120 °C</td></tr>
+                                <tr><th scope="row">Média rotação, 4.500 RPM</th><td>Topo do motor</td><td>100 °C</td></tr>
+                                <tr><th scope="row">6.500 RPM</th><td>Ponto de maior temperatura</td><td>139 °C</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Segundo o relato, a leitura se estabilizou e não subiu durante cinco minutos funcionando em média rotação. Como o termômetro infravermelho mede a superfície e o resultado depende do ponto, da emissividade e das condições de medição, esses valores não determinam, por si só, a temperatura interna nem confirmam uma faixa segura de operação.</p>
+                    <p>A marcha lenta, antes em 3.100 RPM, passou a 3.500 RPM. A rotação máxima chegou a 6.800 RPM, mas foi mantida por apenas alguns segundos; a medição de temperatura em 6.500 RPM foi de 139 °C. A carburação não foi alterada neste ensaio, pois o autor considerou as temperaturas observadas satisfatórias.</p>
+                    <p>Também foi percebida uma resposta de aceleração mais rápida, sem engasgos: da lenta à rotação máxima, o tempo relatado caiu de cerca de 1,5 segundo para 1 segundo. A vela manteve a coloração descrita anteriormente, com metade escura, semelhante a verniz marrom brilhante, e metade café com leite.</p>
+                    <aside class="safety-note">
+                        <strong>O que este registro permite concluir</strong>
+                        <p>As leituras documentam pontos e condições específicos do ensaio, mas não substituem acompanhamento controlado da temperatura e da carburação. Evite tratar a temperatura de superfície como temperatura do cilindro ou como confirmação isolada de segurança.</p>
                     </aside>
                 </section>
 
                 <section class="article-section conclusion" id="conclusao">
-                    <p class="section-index">07 <span>·</span> Fechamento</p>
+                    <p class="section-index">08 <span>·</span> Fechamento</p>
                     <h2>Um protótipo documentado, ainda em avaliação</h2>
                     <p>O trabalho mostra como componentes acessíveis podem formar uma mufla experimental para um motor de 26 cm³. As dimensões e os cálculos ajudam a explicar as escolhas de projeto; o ensaio inicial aponta mudanças de rotação, houve redução de ruído, mas falta quantificar com decibelimetro. Medições controladas são o próximo passo para comparar versões com precisão.</p>
                 </section>
@@ -177,6 +217,7 @@
         <span>Caderno de oficina · Projeto de mufla para aeromodelismo</span>
         <a href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
     </footer>
+    <script src="js/language.js" defer></script>
     <script src="js/visits.js" defer></script>
 </body>
 </html>
